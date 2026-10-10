@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'datos_personales.dart';
-import 'perfil.dart';
-import 'miniaturas.dart';
-import 'iconos.dart';
-import 'galeria.dart';
+import 'ejercicio1.dart';
+import 'ejercicio2.dart';
+import 'ejercicio3.dart';
+import 'ejercicio4.dart';
+import 'ejercicio5.dart';
+import 'ejercicio6.dart';
+import 'ejercicio7.dart';
+import 'ejercicio8.dart';
+import 'ejercicio9.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -18,7 +22,7 @@ class MenuLateral extends StatelessWidget {
             accountEmail: Text('GitHub: Alvaro-Rodriguez-Mondejar'),
           ),
           ListTile(
-            title: const Text('Datos personales'),
+            title: const Text('Ejercicio 1'),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
@@ -29,7 +33,7 @@ class MenuLateral extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Mi perfil'),
+            title: const Text('Ejercicio 2'),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
@@ -40,7 +44,7 @@ class MenuLateral extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Miniaturas'),
+            title: const Text('Ejercicio 3'),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
@@ -51,7 +55,7 @@ class MenuLateral extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Iconos'),
+            title: const Text('Ejercicio 4'),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
@@ -62,12 +66,56 @@ class MenuLateral extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Galería'),
+            title: const Text('Ejercicio 5'),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (BuildContext context) => const Galeria(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Ejercicio 6'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Textos(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Ejercicio 7'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const ImagenesRepetidas(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Ejercicio 8'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const DisenoResponsive(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Ejercicio 9'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const RetoHeader(),
                 ),
               );
             },
