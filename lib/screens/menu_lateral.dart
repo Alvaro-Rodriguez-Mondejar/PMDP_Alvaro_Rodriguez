@@ -8,6 +8,8 @@ import 'ejercicio6.dart';
 import 'ejercicio7.dart';
 import 'ejercicio8.dart';
 import 'ejercicio9.dart';
+import 'ejercicio10.dart';
+import 'ejercicio11.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -116,6 +118,28 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (BuildContext context) => const RetoHeader(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Ejercicio 10'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Ejercicio10(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Ejercicio 11'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Ejercicio11(),
                 ),
               );
             },
